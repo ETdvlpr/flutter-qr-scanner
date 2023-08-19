@@ -1,0 +1,74 @@
+name: scanner
+description: A Flutter project for scanning QR and bar codes.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  # for # date formatting and others 
+  intl: ^0.18.0
+  # For state, route Management
+  get: ^4.6.5
+  # For network requests
+  dio: ^5.3.2
+  http: ^1.1.0
+
+  # For scanning QR code
+  qr_code_scanner: ^1.0.1
+  zxing2: ^0.2.0
+  gs1_barcode_parser: ^1.0.5
+
+  # For image picking
+  image_picker: ^1.0.2
+  # For permission handling
+  permission_handler: ^10.4.1
+
+  # For storing data
+  get_storage: ^2.1.1
+
+  # For creating the launcher icon
+  flutter_launcher_icons: ^0.13.1
+
+  # For saving data
+  path_provider: ^2.1.0
+  share_plus: ^7.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.4.2
+  freezed_annotation: ^2.4.1
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.6
+
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/fonts/
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 600
+    - family: SegoeUi
+      fonts:
+        - asset: assets/fonts/SegoeUI-Regular.ttf
+          weight: 400
