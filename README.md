@@ -6,9 +6,7 @@ Welcome to the QR Code Scanner Flutter Application! This app is built mainly to 
 
 - **Fast QR Code Scanning**: Utilizing the device's camera, the app swiftly scans QR codes, making the process seamless and efficient.
 
-- **Versatile Content Handling**: Upon scanning, the app intelligently handles a wide range of QR code contents, including URLs, text, contact information, and more.
-
-- **History**: All your scanned QR codes are saved in the history tab, making it easy to revisit and reuse them. You can also export this data as a csv file.
+- **History**: All your scanned QR codes are saved and displayed on the homepage, making it easy to revisit and reuse them. You can also export this data as a csv file.
 
 ## Screenshots
 

@@ -6,12 +6,13 @@ import 'package:scanner/shared/routes/app_pages.dart';
 import 'package:scanner/shared/theme/app_theme.dart';
 import 'package:scanner/shared/translations/app_translations.dart';
 import 'package:scanner/ui/bindings/auth_binding.dart';
+import 'package:scanner/utils/constants.dart';
 import 'package:scanner/utils/logger_utils.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
-
+  await GetStorage.init(kScannedItemBoxName);
   runApp(const MyApp());
 }
 

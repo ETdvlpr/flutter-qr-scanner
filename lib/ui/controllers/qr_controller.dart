@@ -106,6 +106,7 @@ class QRController extends GetxService {
 
   void onQRViewCreated(QRViewController controller) {
     cameraController = controller;
+    controller.resumeCamera();
     controller.scannedDataStream.listen((scanData) {
       final barcode = scanData;
       print("barcode: ${barcode.format} : ${barcode.code}");

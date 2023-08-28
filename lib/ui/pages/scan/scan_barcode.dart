@@ -22,9 +22,9 @@ class _QrScannerState extends State<QrScanner> {
   void reassemble() {
     super.reassemble();
     if (Platform.isAndroid) {
-      controller.cameraController!.pauseCamera();
+      controller.cameraController?.pauseCamera();
     } else if (Platform.isIOS) {
-      controller.cameraController!.resumeCamera();
+      controller.cameraController?.resumeCamera();
     }
   }
 
