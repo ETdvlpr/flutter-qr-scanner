@@ -32,7 +32,7 @@ class _QrScannerState extends State<QrScanner> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mobile Scanner'),
+        title: const Text('Snap GTIN'),
         actions: [
           // IconButton(
           //   onPressed: controller.selectAndScanFromGallery,

@@ -10,7 +10,7 @@ class HomePage extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Barcode Scanner"),
+        title: const Text("Snap GTIN"),
         actions: [
           Obx(
             () => controller.scannedItems.isNotEmpty
